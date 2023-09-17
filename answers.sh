@@ -65,3 +65,22 @@ FROM companies
 INNER JOIN employees
 on employees.Company=companies.Name
 WHERE employees.Role="graphic designer""
+
+
+
+\\\\\\\\\\\ count & filter \\\\\\\\
+
+"SELECT * FROM students
+WHERE Points= (SELECT max(Points)FROM students)"
+
+"SELECT avg(Points) FROM students"
+
+"SELECT COUNT(*) FROM Students 
+WHERE Points=500;"
+
+"SELECT Name FROM students
+WHERE Name LIKE "%s%";"
+
+"SELECT * FROM students
+ORDER by Points DESC"
+
